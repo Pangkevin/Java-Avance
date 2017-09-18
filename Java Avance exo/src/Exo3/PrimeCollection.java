@@ -1,0 +1,66 @@
+package Exo3;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class PrimeCollection {
+
+	
+	private ArrayList<Integer> var1= new ArrayList<Integer>() ;
+	
+	public void initRandom(int n, int m ){
+		
+		for(int i=0; i < n; i++){
+			
+			this.var1.add(0 + (int)(Math.random() * ((m - 0) + 1)));			
+			
+		}
+		
+	}
+	
+	private boolean isPrime (int n){
+		
+		boolean isPremier = true;
+		
+		if (n < 0) {
+			isPremier = false;
+		} else if (n != 0 && n != 1) {
+			for (int i = 2; i <= n/2; i++) {
+				if (n != i && n % i == 0) {
+					
+					isPremier = false;
+					break;
+				}
+			}
+		}
+		return isPremier;
+		
+		
+	}
+	
+	public ArrayList<Integer> getVar1() {
+		return var1;
+	}
+
+	
+	
+	public static void main(String[] args) {
+		
+		PrimeCollection primeCollection= new PrimeCollection();
+		
+		primeCollection.initRandom(100, 100);
+		
+		for(int i=0; i < primeCollection.getVar1().size(); i++ ){
+			
+			System.out.println(primeCollection.isPrime(primeCollection.getVar1().get(i)));
+			
+			
+		}
+		 
+	
+		
+		
+	}
+	
+	
+}
