@@ -1,0 +1,34 @@
+package Exo6;
+
+import Exo4.Point;
+
+public class LigneBrisee {
+	
+	private Point tabPoint[];
+	private final int COMPTEUR=0;
+
+	public LigneBrisee(int max) {
+		
+
+		this.tabPoint = new Point[max];
+		this.COMPTEUR 
+	}
+	
+	
+	public void add(int x, int y){
+		
+		Point p = new Point(x, y);
+		
+		this.tabPoint
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

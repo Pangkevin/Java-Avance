@@ -1,5 +1,7 @@
 package Exo4;
 
+import java.util.ArrayList;
+
 public class Point {
 	
 	private int x;
@@ -57,10 +59,23 @@ public Point(int y) {
 		
 	}
 	
+	 @Override
+     public boolean equals(Object o)
+     {
+		 if(o.toString() == this.toString()){
+          return true;
+     }else{
+    	 
+    	 return false;
+     }
+		
+ 
+     }
+	
 	
 	public static void main(String[] args) {
 		
-		Point p = new Point(1,1);
+		/*Point p = new Point(1,1);
 		
 		
 		System.out.println(p.cpt);
@@ -78,7 +93,27 @@ public Point(int y) {
 		
 		System.out.println(p.equals(p2));
 		
-		System.out.println(p.isSameAs(p2));
+		System.out.println(p.isSameAs(p2));*/
+		
+		
+		
+		Point p1=new Point(1,2);
+		
+		Point p2=p1;
+		
+		Point p3=new Point(1,2);
+		
+		
+		ArrayList<Point> list = new ArrayList<>();
+		
+		list.add(p1);
+		
+		System.out.println(list.indexOf(p2));
+		
+		
+		System.out.println(list.indexOf(p3));
+		
+		System.out.println(p1.equals(new String()));
 		
 	}
 	
