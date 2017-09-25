@@ -54,28 +54,29 @@ public class LigneBrisee {
 	
 	public boolean contains(Point p){
 		
-		boolean bool= false;
 		
-		for (int i = 0; i < this.tabPoint.length; i++) {
+		
 			
-			if( p.equals(this.tabPoint[i])){
+			
+		for (Point u : tabPoint){
+			
+			
+			if( p.equals(u)){
 				
-				bool = true;
+				return true;
 				
-			}else{
-				
-				bool= false;
 			}
 			
 		}
-			return bool;
+			return false;
+			
 		
 	}
 	
 	
 	public static void main(String[] args) {
 		
-		LigneBrisee ligneBrisee= new LigneBrisee(3);
+		LigneBrisee ligneBrisee= new LigneBrisee(5);
 		
 		
 		ligneBrisee.add(1, 2);
@@ -89,7 +90,7 @@ public class LigneBrisee {
 		System.out.println(ligneBrisee.pointCapacity());
 		
 		
-		System.out.println(ligneBrisee.contains(new Point(1, 7)));
+		System.out.println(ligneBrisee.contains(new Point(1, 2)));
 		
 		
 		

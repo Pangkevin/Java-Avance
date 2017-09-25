@@ -1,0 +1,132 @@
+package Exo4;
+
+import java.util.ArrayList;
+
+public class Point {
+	
+	private int x;
+	private int y;
+	private static int cpt=0;
+	
+	
+	public Point(int x, int y) {
+		
+		this.x = x;
+		this.y = y;
+		
+		cpt++;
+		
+	}
+
+public Point(int y) {
+		
+		
+		this.y = y;
+		
+		cpt++;
+		
+	}
+
+
+	public int getY() {
+		return y;
+	}
+	
+	public int getX() {
+		return x;
+	}
+	
+	public static int getCpt() {
+		return cpt;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "("+this.x+", "+this.y+")";
+	}
+	
+	
+	public boolean isSameAs(Point p){
+		
+		if(this.getX() == p.getX() && this.getY() == p.getY()){
+			
+			return true;
+		}else{
+			
+			return false;
+		}
+		
+	}
+	
+	 @Override
+     public boolean equals(Object o){
+		
+		 if (!(o instanceof Point)){
+			 
+			 return false;
+			 
+			 
+		 }else{
+			 
+			Point p = (Point) o;
+			
+			return (this.getX() == p.getX()) && (this.getY() == p.getY());
+			 
+			 
+		 }
+		 
+		
+ 
+     }
+	
+	
+	public static void main(String[] args) {
+		
+		/*Point p = new Point(1,1);
+		
+		
+		System.out.println(p.cpt);
+		
+		Point p2 = new Point(1,1);
+		
+		System.out.println(p2.cpt);
+		
+		Point p3 = new Point(1);
+		
+		System.out.println(p3.cpt);
+		
+		System.out.println(p2);
+		
+		
+		System.out.println(p.equals(p2));
+		
+		System.out.println(p.isSameAs(p2));*/
+		
+		
+		
+		Point p1=new Point(1,2);
+		
+		Point p2=p1;
+		
+		Point p3=new Point(1,2);
+		
+		
+		ArrayList<Point> list = new ArrayList<>();
+		
+		list.add(p1);
+		
+		System.out.println(list.indexOf(p2));
+		
+		
+		System.out.println(list.indexOf(p3));
+		
+		System.out.println(p1.equals(new String()));
+		
+	}
+	
+	
+	
+	
+
+}

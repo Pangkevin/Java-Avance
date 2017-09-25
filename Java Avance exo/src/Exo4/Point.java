@@ -60,14 +60,22 @@ public Point(int y) {
 	}
 	
 	 @Override
-     public boolean equals(Object o)
-     {
-		 if(o.toString() == this.toString()){
-          return true;
-     }else{
-    	 
-    	 return false;
-     }
+     public boolean equals(Object o){
+		
+		 if (!(o instanceof Point)){
+			 
+			 return false;
+			 
+			 
+		 }else{
+			 
+			Point p = (Point) o;
+			
+			return (this.getX() == p.getX()) && (this.getY() == p.getY());
+			 
+			 
+		 }
+		 
 		
  
      }
@@ -113,7 +121,9 @@ public Point(int y) {
 		
 		System.out.println(list.indexOf(p3));
 		
-		System.out.println(p1.equals(new String()));
+		System.out.println(p1.equals(p1));
+		
+		
 		
 	}
 	

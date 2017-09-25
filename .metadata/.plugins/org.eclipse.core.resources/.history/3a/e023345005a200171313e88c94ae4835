@@ -1,0 +1,104 @@
+package Exo6;
+
+import Exo4.Point;
+
+public class LigneBrisee {
+	
+	private Point tabPoint[];
+	private int max;
+
+
+	public LigneBrisee(int max) {
+		
+		this.max = max;
+		this.tabPoint = new Point[this.max-1];
+	
+	}
+	
+	
+	public void add(int x, int y){
+		
+		Point p = new Point(x, y);
+		
+		this.tabPoint[p.getCpt()-1]= p;
+		
+	}
+	
+	public int pointCapacity(){
+		
+		
+		return tabPoint.length;
+		
+		
+	}
+	
+	public int nbPoint(){
+		
+		int nbrPoint=0;
+		
+		for(int i=0; i < this.tabPoint.length; i++){
+			
+			if(this.tabPoint[i] != null){
+				
+				nbrPoint ++;
+				
+			}
+			
+			
+		}
+		
+		return nbrPoint;
+		
+	}
+	
+	
+	public boolean contains(Point p){
+		
+		boolean bool= false;
+		
+		for (int i = 0; i < this.tabPoint.length; i++) {
+			
+			if( p.equals(this.tabPoint[i])){
+				
+				bool = true;
+				
+			}else{
+				
+				bool= false;
+			}
+			
+		}
+			return bool;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		LigneBrisee ligneBrisee= new LigneBrisee(3);
+		
+		
+		ligneBrisee.add(1, 2);
+		
+		ligneBrisee.add(1, 3);
+		
+		ligneBrisee.add(1, 2);
+		
+		System.out.println(ligneBrisee.nbPoint());
+		
+		System.out.println(ligneBrisee.pointCapacity());
+		
+		
+		System.out.println(ligneBrisee.contains(new Point(1, 7)));
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}
