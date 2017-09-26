@@ -1,0 +1,19 @@
+
+
+public class Mere {
+	
+
+	protected int meth() {
+		return 42;
+		}
+		public void printMeth() {
+		System.out.println(meth());
+		}
+		}
+		class Fille extends Mere {
+		public int meth() {
+		return 24;
+		}
+	
+	
+}

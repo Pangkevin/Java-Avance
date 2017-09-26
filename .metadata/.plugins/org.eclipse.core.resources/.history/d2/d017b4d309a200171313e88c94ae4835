@@ -1,0 +1,26 @@
+package Exo4;
+
+public class Circle {
+
+private Point p;
+private int rayon;
+
+
+	public Circle(Point p, int rayon){ 
+	this.p = p;
+	this.rayon = rayon;
+}
+
+
+
+
+
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

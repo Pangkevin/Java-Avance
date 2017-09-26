@@ -1,0 +1,15 @@
+
+public class Multi implements Expr{
+
+	@Override
+	public double eval() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	
+	
+	
+	
+}

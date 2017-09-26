@@ -1,0 +1,25 @@
+
+public class Value implements Expr{
+	
+	private double val;
+	
+	
+
+	public Value(int val) {
+		super();
+		this.val = val;
+	}
+
+
+
+	@Override
+	public double eval() {
+		
+		return val;
+	}
+	
+	
+	
+	
+
+}
