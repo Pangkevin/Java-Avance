@@ -1,0 +1,9 @@
+
+public class Car {
+	private final String brand ;
+	private final String licencePlate ;
+	private final String value = new String();
+	
+	
+	
+}

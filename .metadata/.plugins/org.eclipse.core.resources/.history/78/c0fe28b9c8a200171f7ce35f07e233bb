@@ -1,0 +1,4 @@
+
+public class Car {
+	private final String brand = new String();
+}

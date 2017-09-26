@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+
+	private List <Car> listCar= new ArrayList<Car>();
+	
+	public List<Car> getListCar() {
+		return listCar;
+	}
+	
+	
+
+	public void setListCar(List<Car> listCar) {
+		this.listCar = listCar;
+	}
+
+	public void addCar(Car car){
+		
+		this.listCar.add(car);
+		
+	}
+	
+	
+}

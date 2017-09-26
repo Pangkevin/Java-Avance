@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+public class Garage {
+
+	private List <Car> listCar= new ArrayList<Car>();
+	
+	public List<Car> getListCar() {
+		return listCar;
+	}
+	
+	
+
+	public void setListCar(List<Car> listCar) {
+		this.listCar = listCar;
+	}
+
+	public void addCar(Car car){
+		
+	
+		
+		Objects.requireNonNull(car);
+		
+		this.listCar.add(car);
+		
+	}
+	
+	
+}

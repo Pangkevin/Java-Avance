@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+
+	private List <Car> listCar= new ArrayList<Car>();
+	
+	public void addCar(Car car){
+		
+		
+		t
+		
+	}
+	
+	
+}
