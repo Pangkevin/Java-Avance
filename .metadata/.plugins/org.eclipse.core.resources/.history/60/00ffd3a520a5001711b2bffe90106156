@@ -1,0 +1,14 @@
+
+public abstract class Vehicule {
+	private final String brand;
+	private final long value;
+
+	public long getValue() {
+		return this.value;
+	}
+
+	public Object getBrand() {
+		// TODO Auto-generated method stub
+		return brand;
+	}
+}

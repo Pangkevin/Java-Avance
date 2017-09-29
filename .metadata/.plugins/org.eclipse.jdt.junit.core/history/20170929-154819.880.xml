@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GarageTest2" project="Java Avance td 4" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="GarageTest2" time="0.006">
+    <testcase name="garageAddRemove" classname="GarageTest2" time="0.005"/>
+    <testcase name="findACarByModelNull" classname="GarageTest2" time="0.0"/>
+    <testcase name="garageRemoveNotExist" classname="GarageTest2" time="0.001"/>
+  </testsuite>
+</testrun>

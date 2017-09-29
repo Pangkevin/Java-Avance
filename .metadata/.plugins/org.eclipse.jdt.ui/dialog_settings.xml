@@ -20,7 +20,7 @@
 		<item value="630" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="769" key="DIALOG_HEIGHT"/>
-		<item value="452" key="DIALOG_X_ORIGIN"/>
+		<item value="138" key="DIALOG_X_ORIGIN"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="NewClassWizardPage">
@@ -46,7 +46,7 @@
 		<item value="647" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="794" key="DIALOG_HEIGHT"/>
-		<item value="444" key="DIALOG_X_ORIGIN"/>
+		<item value="121" key="DIALOG_X_ORIGIN"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="DialogBounds_GenerateToStringDialog">

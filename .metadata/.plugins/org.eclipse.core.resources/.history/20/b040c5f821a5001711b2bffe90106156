@@ -1,0 +1,10 @@
+
+public class Bike {
+	public Bike(String string, Object object) {
+		// TODO Auto-generated constructor stub
+	}
+
+	private String brand;
+	public final double PRICE = 100.0;
+
+}

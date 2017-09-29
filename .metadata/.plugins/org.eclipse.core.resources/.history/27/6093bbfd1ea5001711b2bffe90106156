@@ -1,0 +1,8 @@
+
+public interface vehicule {
+	public void add();
+	
+	
+	
+	
+}

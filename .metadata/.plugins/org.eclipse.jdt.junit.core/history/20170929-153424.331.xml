@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CarTest" project="Java Avance td 4" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="CarTest" time="0.0">
+    <testcase name="testGetBrand" classname="CarTest" time="0.0"/>
+    <testcase name="testGetValue" classname="CarTest" time="0.0"/>
+    <testcase name="newCarNoBrand" classname="CarTest" time="0.0"/>
+    <testcase name="newCarNoPlate" classname="CarTest" time="0.0"/>
+    <testcase name="testVetuste" classname="CarTest" time="0.0"/>
+    <testcase name="newCarNoBrand2" classname="CarTest" time="0.0"/>
+    <testcase name="testInvalidValue" classname="CarTest" time="0.0"/>
+    <testcase name="testTooOld" classname="CarTest" time="0.0"/>
+    <testcase name="newCarNoPlate2" classname="CarTest" time="0.0"/>
+  </testsuite>
+</testrun>

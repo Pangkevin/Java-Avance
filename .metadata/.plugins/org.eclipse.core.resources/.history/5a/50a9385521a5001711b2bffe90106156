@@ -1,0 +1,24 @@
+import java.util.Objects;
+
+public abstract class Vehicule {
+	private final String brand;
+	private final long value;
+
+	public long getValue() {
+		return this.value;
+	}
+
+	public Object getBrand() {
+		// TODO Auto-generated method stub
+		return brand;
+	}
+
+	// Constructeur
+	public Vehicule(String brand, long value) {
+		this.brand = Objects.requireNonNull(brand, "brand non null");
+		if (value < 0) {
+			throw new IllegalArgumentException();
+		}
+		this.value = value;
+	}
+}

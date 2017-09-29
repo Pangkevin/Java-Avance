@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CarTest2" project="Java Avance td 4" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="CarTest2" time="0.005">
+    <testcase name="testEquals2" classname="CarTest2" time="0.0"/>
+    <testcase name="testContains1" classname="CarTest2" time="0.0"/>
+    <testcase name="testContains2" classname="CarTest2" time="0.0"/>
+    <testcase name="testNotContains1a" classname="CarTest2" time="0.005"/>
+    <testcase name="testNotContains1b" classname="CarTest2" time="0.0"/>
+    <testcase name="testNotContains2a" classname="CarTest2" time="0.0"/>
+    <testcase name="testNotContains2b" classname="CarTest2" time="0.0"/>
+    <testcase name="testEquals" classname="CarTest2" time="0.0"/>
+  </testsuite>
+</testrun>

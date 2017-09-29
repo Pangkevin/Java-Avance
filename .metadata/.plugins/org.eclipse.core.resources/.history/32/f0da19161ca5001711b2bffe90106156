@@ -1,0 +1,105 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Objects;
+
+public class Garage {
+
+	private List<Car> listCar = new ArrayList<Car>();
+	private int id;
+	private static int countCar;
+
+	public int getId() {
+		return id;
+	}
+
+	public List<Car> getListCar() {
+		return listCar;
+	}
+
+	public void setListCar(List<Car> listCar) {
+		this.listCar = listCar;
+	}
+
+	public void addCar(Car car) {
+
+		Objects.requireNonNull(car, " Must be not null");
+
+		this.listCar.add(car);
+
+	}
+
+	@Override
+	public String toString() {
+
+		StringBuilder sb = new StringBuilder();
+
+		for (Car car : listCar) {
+
+			sb.append(car.toString());
+
+		}
+
+		return sb.toString();
+	}
+
+	/**
+	 * Exercice 9
+	 * 
+	 * @return
+	 */
+	public long getValue() {
+
+		long sumCars = 0;
+
+		for (Car car : listCar) {
+
+			sumCars = sumCars + car.getValue();
+
+		}
+
+		return sumCars;
+
+	}
+
+	/**
+	 * Exercice 10
+	 * 
+	 * @param brand
+	 * @return
+	 * @throws IllegalArgumentException
+	 */
+	public Car firstCarByBrand(String brand) throws IllegalArgumentException {
+
+		Objects.requireNonNull(brand);
+
+		for (Car car : listCar) {
+
+			if (brand == car.getBrand()) {
+
+				return car;
+			}
+		}
+		throw new IllegalArgumentException();
+
+	}
+
+	public void remove(Car car) {
+
+		// On doit utiliser un itérator pcq on peut pas avec un for each faire
+		// un remove d'un objet d'une liste
+
+		Iterator<Car> iteListeCar = listCar.iterator();
+		while (iteListeCar.hasNext()) {
+			//Car c = (Car) iteListeCar.next();
+
+			if (iteListeCar.equals(car)) {
+				iteListeCar.remove();
+				return; // permet de couper la boucle
+			}
+		}
+		throw new IllegalStateException();
+
+	}
+
+}

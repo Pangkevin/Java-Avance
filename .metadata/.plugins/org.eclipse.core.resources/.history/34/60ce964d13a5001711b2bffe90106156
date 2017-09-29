@@ -1,0 +1,55 @@
+import java.util.Objects;
+
+public class Car {
+
+	private final String brand;
+	private final String licencePlate;
+	private final long value;
+	private int vetuste; // un niveau de vetuste = 1000
+
+	/**
+	 * 
+	 * @param brand
+	 * @param licencePlate
+	 * @param value
+	 *            Non négative
+	 */
+	public Car(String brand, String licencePlate, long value) {
+		this.brand = Objects.requireNonNull(brand, "brand non null");
+		this.licencePlate = Objects.requireNonNull(licencePlate, "licencePlate non null");
+
+		if (value < 0) {
+			throw new IllegalArgumentException();
+		}
+		this.value = value;
+
+	}
+
+	public Car(String brand, String licencePlate, long value, int vetuste) {
+		this(brand, licencePlate, value);
+
+		if (value - vetuste * 1000 < 0) {
+			throw new IllegalArgumentException();
+		}
+		this.vetuste = Objects.requireNonNull(vetuste, "vetuste non null");
+
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public String getLicencePlate() {
+		return licencePlate;
+	}
+
+	public long getValue() {
+		return this.value - vetuste * 1000;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [brand=" + brand + ", licencePlate=" + licencePlate + ", value=" + value + "]";
+	}
+
+}

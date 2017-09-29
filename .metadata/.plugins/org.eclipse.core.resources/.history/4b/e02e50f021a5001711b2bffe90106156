@@ -1,0 +1,6 @@
+
+public class Bike {
+	private String brand;
+	public final double PRICE = 100.0;
+
+}

@@ -1,0 +1,10 @@
+
+public class Bike extends Vehicule {
+	public Bike(String string, Object object) {
+		super();
+	}
+
+	private String brand;
+	public final double PRICE = 100.0;
+
+}

@@ -1,0 +1,6 @@
+
+public class Bike {
+	private String marque = "";
+	private final double PRIX = 100.0;
+
+}

@@ -1,0 +1,11 @@
+
+public class Bike extends Vehicule {
+	public final static long PRICE = 100.0;
+
+	public Bike(String brand) {
+		super(brand, PRICE);
+	}
+
+	private String brand;
+
+}
