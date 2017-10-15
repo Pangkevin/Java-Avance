@@ -1,6 +1,7 @@
-package tds.td4;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
@@ -12,9 +13,11 @@ public class GarageTest3 {
 		garage.remove(new Bike("Cannondale"));
 	}
 
-	@Test 
+	@Test
 	public void firstCarByBrand() {
-		Vehicule v1 = new Car("BMW", "42abc75", 15000, null);	//car 15000e without discount
+		Vehicule v1 = new Car("BMW", "42abc75", 15000, null); // car 15000e
+																// without
+																// discount
 		Vehicule v2 = new Bike("Renault", null);
 		Vehicule v3 = new Bike("Renault", null);
 		Garage garage = new Garage();
@@ -43,7 +46,6 @@ public class GarageTest3 {
 		assertEquals(new Car("Ford", "42abc75", 2020), garage.firstCarByBrand("Ford"));
 	}
 
-
 	@Test
 	public void findACarByModel2() {
 		Garage garage = new Garage();
@@ -52,7 +54,6 @@ public class GarageTest3 {
 
 		assertNull(garage.firstCarByBrand("Renault"));
 	}
-
 
 	@Test
 	public void protect() {

@@ -25,6 +25,11 @@ public class Car extends Vehicule {
 			throw new IllegalArgumentException();
 		}
 		this.vetuste = Objects.requireNonNull(vetuste, "vetuste non null");
+	}
+
+	public Car(String brand, String licencePlate, long value, Discount discount_value) {
+		super(brand, value, discount_value);
+		this.licencePlate = Objects.requireNonNull(licencePlate, "licencePlate non null");
 
 	}
 

@@ -92,7 +92,7 @@ public class Garage {
 
 	public void remove(Vehicule car) {
 
-		// On doit utiliser un itérator pcq on peut pas avec un for each faire
+		// On doit utiliser un iterator pcq on peut pas avec un for each faire
 		// un remove d'un objet d'une liste
 
 		Iterator<Vehicule> iteListeCar = listCar.iterator();
@@ -102,6 +102,19 @@ public class Garage {
 			if (c.equals(car)) {
 				iteListeCar.remove();
 				return; // permet de sortir de la fonction
+			}
+		}
+		throw new IllegalStateException();
+
+	}
+
+	public void protectionism(String brand) {
+		Iterator<Vehicule> iteListeCar = listCar.iterator();
+		while (iteListeCar.hasNext()) {
+			Vehicule v = iteListeCar.next();
+
+			if (v.getBrand() == brand) {
+				iteListeCar.remove();
 			}
 		}
 		throw new IllegalStateException();
